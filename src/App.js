@@ -164,6 +164,7 @@ function App() {
                            bordered
                       title={() => <> <Tag color="blue-inverse">Number of Students: </Tag>
                           <Badge count={students.length } className="site-badge-count-4" />
+                          <Divider/>
                           <Button
                               onClick={() => setShowDrawer(!showDrawer)}
                               type="primary" shape="round" icon={<PlusOutlined  />} size="small">
@@ -177,7 +178,7 @@ function App() {
                           type="primary" shape="round" icon={<PlusOutlined  />} size="small">
                           Add New Student
                       </Button>
-                          <hr/>
+                          <hr/> <Divider/>
                           <Badge count={students.length} className="site-badge-count-4" />
 
                       </>
