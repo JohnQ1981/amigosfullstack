@@ -1,4 +1,4 @@
-import {Badge, Button, Radio, Spin, Tag} from 'antd';
+import {Badge, Button, Divider, Radio, Spin, Tag} from 'antd';
 import './App.css';
 import StudentDrawerForm from "./StudentDrawerForm";
 import {useState, useEffect} from "react";
@@ -164,6 +164,7 @@ function App() {
                            bordered
                       title={() => <> <Tag color="blue-inverse">Number of Students: </Tag>
                           <Badge count={students.length } className="site-badge-count-4" />
+                          <Divider/>
                           <Button
                               onClick={() => setShowDrawer(!showDrawer)}
                               type="primary" shape="round" icon={<PlusOutlined  />} size="small">
@@ -177,7 +178,7 @@ function App() {
                           type="primary" shape="round" icon={<PlusOutlined  />} size="small">
                           Add New Student
                       </Button>
-                          <hr/>
+                          <hr/> <Divider/>
                           <Badge count={students.length} className="site-badge-count-4" />
 
                       </>
@@ -236,10 +237,13 @@ function App() {
                 </div>
             </Content>
             <Footer style={{ textAlign: 'center' }}>JohnQ ©2021 Created by John Q.
-                <hr/>
+                <Divider></Divider>
                 <Image
                     width ={75}
                     src="https://picsum.photos/seed/picsum/200/300" />
+                <Divider>
+                    <a href="https://www.viscolove.us" target="_blank">Visit My WebSite</a>
+                </Divider>
 
             </Footer>
         </Layout>
