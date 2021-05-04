@@ -1,4 +1,4 @@
-import {Badge, Button, Radio, Spin, Tag} from 'antd';
+import {Badge, Button, Divider, Radio, Spin, Tag} from 'antd';
 import './App.css';
 import StudentDrawerForm from "./StudentDrawerForm";
 import {useState, useEffect} from "react";
@@ -236,10 +236,13 @@ function App() {
                 </div>
             </Content>
             <Footer style={{ textAlign: 'center' }}>JohnQ ©2021 Created by John Q.
-                <hr/>
+                <Divider></Divider>
                 <Image
                     width ={75}
                     src="https://picsum.photos/seed/picsum/200/300" />
+                <Divider>
+                    <a href="https://www.viscolove.us" target="_blank">Visit My WebSite</a>
+                </Divider>
 
             </Footer>
         </Layout>
